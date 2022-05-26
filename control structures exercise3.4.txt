@@ -1,0 +1,11 @@
+n=int(input('Enter the number:- '))
+f0=0
+f1=1
+fn=0
+count=0
+while (count<=n):
+    print('the fabiacoo number of',count,'is',fn)
+    f0=f1
+    f1=fn
+    fn=f0+f1
+    count=count+1

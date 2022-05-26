@@ -1,0 +1,11 @@
+a=int(input())
+b=int(input())
+c=int(input())
+
+d=[a,b,c]
+big=0
+for biggest in d:
+    if (biggest>big):
+        big=biggest
+
+print('The maximum number is',big)
