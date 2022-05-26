@@ -1,0 +1,8 @@
+n= input('Enter the number:- ')
+
+def find_square(n):
+    a=int(n)
+    square=a*a
+    return square
+
+print('The square of the number is',find_square(n))
