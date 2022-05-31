@@ -1,0 +1,8 @@
+num = int(input('Enter the number which u have to shift:-'))
+n = int(input('Enter the number by how many to shift'))
+
+def right_shift(num,n):
+    new_num=num>>n
+    print(new_num)
+
+right_shift(num,n)

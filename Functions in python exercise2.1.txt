@@ -1,0 +1,11 @@
+num=int(input('enter the number:- '))
+
+def factorial(num):
+    fact=1
+    counter=1
+    while (counter<=num):
+        fact*=counter
+        counter+=1
+    return fact
+
+print('The factorial of number',num,'is',factorial(num))

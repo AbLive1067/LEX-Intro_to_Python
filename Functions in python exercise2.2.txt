@@ -1,0 +1,15 @@
+num=int(input('enter the number:- '))
+
+def is_palindrome(num):
+    temp=0
+    while (num>0):
+        i=num%10
+        temp= temp * 10 + i
+        num=num//10
+    return int(temp)
+
+
+if ( is_palindrome(num) == num):
+    print ('Given number is a palindrome')
+else:
+    print('Given number is not a palindrome')
