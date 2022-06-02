@@ -1,0 +1,36 @@
+#Write a Python program to generate the ticket numbers for specified number of passengers traveling in a flight as per the details mentioned below:
+The ticket number should be generated as airline:src:dest:number where
+
+Consider AL1 as the value for airline
+
+src and dest should be the first three characters of the source and destination cities.
+
+number should be auto-generated starting from 101
+
+The program should return the list of ticket numbers of last five passengers.
+Note: If passenger count is less than 5, then return the list of all generated ticket numbers.
+--------------------------
+
+Ticket_list=[]
+airline='AL1'
+src=str(input('Enter the Boarding place:- '))
+dest=str(input('Enter the destination place:- '))
+
+
+def src_process(src):
+    src_name=src
+    src_initial=src_name[0:3]
+    return (src_initial)
+
+def dest_process(dest):
+    dest_name=dest
+    dest_initial=dest_name[0:3]
+    return (dest_initial)
+
+number=101
+while (len(Ticket_list)<5):
+    number_str=str(number)
+    ticketno= airline + src_process(src) +dest_process(dest)+ number_str
+    number+=1
+    Ticket_list.append(ticketno)
+print(Ticket_list)

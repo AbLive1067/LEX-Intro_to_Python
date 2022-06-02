@@ -1,0 +1,27 @@
+#Given a list of integer values, write a Python program to check whether the list contains the same number in adjacent positions. Display the count of such adjacent occurrences.
+
+Sample Input
+[1,1,5,100,-20,-20,6,0,0]
+[10,20,30,40,30,20]
+
+Sample Output
+3
+0
+-------------------------
+code:-
+
+n=0
+sample_list=[]
+while (n!='done'):
+    n= input('Enter the elements of list:- ')
+    if (n!='done'):
+        sample_list.append(n)
+print(sample_list)
+real_list=sample_list
+
+element=0
+counter=0
+for element in range(0,len(real_list)):
+    if (real_list[element] == real_list[element-1]):
+        counter+=1
+print('The count of such adjacent occurences',counter)

@@ -1,0 +1,20 @@
+#Write a Python function generate_fibanacci(n) to return a list of first n Fibonacci numbers.
+--------------------------
+code:-
+
+n=int(input('Enter the first n number for fibanacci:- '))
+list=[]
+
+def generate_fibanacci(n):
+    f0=0
+    f1=1
+    fn=0
+    for i in range(0, n):
+        f0=f1
+        f1=fn
+        fn=f0+f1
+        list.append(fn)
+    return list
+
+fibanacci=generate_fibanacci(n)
+print('List of first',n,'Fibonacci number is',list)

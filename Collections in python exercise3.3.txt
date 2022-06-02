@@ -1,0 +1,13 @@
+#Write a Python program to generate the next 15 leap years starting from a given year. Populate the leap years into a list and display the list.
+------------------------------
+code:-
+
+year=int(input('Enter the year:- '))
+leap_year_list=[]
+
+while (len(leap_year_list)<15):
+    year+=1
+    if (year%4==0):
+        leap_year_list.append(year)
+
+print(leap_year_list)
