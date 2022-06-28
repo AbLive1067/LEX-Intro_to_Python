@@ -1,0 +1,24 @@
+#Given a string containing uppercase characters (A-Z), compress the string using Run Length encoding. Repetition of character has to be replaced by storing the length of that run.
+Write a python function encode(message)  which performs the run length encoding for a given String and returns the run length encoded String.
+Provide different String values and test your program.
+Example: message=AAAABBBBCCCCCCCC  output: 4A4B8C
+-------------------------
+code:-
+
+
+message= str(input('Enter the message:- '))
+
+def encode(message):
+
+    a=len(message)
+    b=0
+    while ((b<a-1) ):
+        counter=1
+        while ((b<a-1) and (message[b]==message[b+1])):
+            counter+=1
+            b+=1
+        b+=1
+        print (str(counter)+message[b-1],end= "")
+
+
+encode(message)

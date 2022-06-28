@@ -1,0 +1,26 @@
+#Represent a small bilingual (English-Swedish) glossary given below as a Python dictionary
+{"merry":"god", "christmas":"jul", "and":"och", "happy":"gott", "new":"nytt", "year":"ar"} 
+and use it to translate your Christmas wishes from English into Swedish.
+That is, write a Python function translate(b_dict,list_words) that accepts the bilingual dictionary and a list of English words (your Christmas wish) and returns a list of equivalent Swedish words. 
+--------------------------
+code:-
+
+
+list_words=[]
+swed_words=[]
+ip=0
+
+while (ip!='done'):
+    ip= input('Enter the elements of list:- ')
+    if (ip!='done'):
+        list_words.append(ip)
+
+b_dict={'merry':'god', 'christmas':'jul','and':'och','happy':'gott','new':'nytt','year':'ar'}
+
+def translate(b_dict,list_words):
+    for i in list_words:
+        a=b_dict[i]
+        swed_words.append(a)
+    return swed_words
+
+print(translate(b_dict,list_words))
